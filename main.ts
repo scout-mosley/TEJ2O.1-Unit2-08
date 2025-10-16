@@ -10,18 +10,19 @@ basic.clearScreen()
 basic.showIcon(IconNames.Happy)
 
 input.onButtonPressed(Button.A, function () {
+
     // turns on red pin
     basic.showIcon(IconNames.Yes)
     pins.digitalWritePin(DigitalPin.P14, 1)
     basic.pause(1000)
     pins.digitalWritePin(DigitalPin.P14, 0)
 
-    // turns on green pin
+    // turns on blue pin
     pins.digitalWritePin(DigitalPin.P15, 1)
     basic.pause(1000)
     pins.digitalWritePin(DigitalPin.P15, 0)
 
-    // turns on blue pin
+    // turns on green pin
     pins.digitalWritePin(DigitalPin.P16, 1)
     basic.pause(1000)
     pins.digitalWritePin(DigitalPin.P16, 0)
