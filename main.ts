@@ -1,16 +1,16 @@
 /* Copyright (c) 2025 MTHS All rights reserved
  *
- * Created by: scout mosley
+ * Created by: Scout Mosley
  * Created on: Oct 2025
- * This program Program now shows all the possible colours on the RGB LED
+ * This program now shows all the possible colours on the RGB LED.
 */
 
-
+// cleanup
 basic.clearScreen()
 basic.showIcon(IconNames.Happy)
 
+// shows all colors on A button
 input.onButtonPressed(Button.A, function () {
-
     // turns on red pin
     basic.showIcon(IconNames.Yes)
     pins.digitalWritePin(DigitalPin.P14, 1)
